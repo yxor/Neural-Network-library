@@ -1,5 +1,5 @@
 #required for the nn to function
-pip install numpy
+numpy
 #required for the examples
-pip install matplotlib
-pip install sklearn
+matplotlib
+sklearn
