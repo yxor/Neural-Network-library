@@ -1,2 +1,3 @@
 # Neural-Network-library
-a neural network library
+
+A small neural network library 
