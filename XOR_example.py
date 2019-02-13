@@ -1,4 +1,4 @@
-from nn2 import NeuraNetwork
+from nn import NeuraNetwork
 from numpy import add, array
 import matplotlib.pyplot as plt
 import random
@@ -19,12 +19,10 @@ def make_dataset(number):
 
 #initiating an instance of the NeuralNetwork class
 #nn = NeuraNetwork(2,8,4,1)
-nn = NeuraNetwork(2,8,1)
-
-
+nn = NeuraNetwork(2,6,1, learning_rate=0.05)
 
 #creating the dataset
-dataset = make_dataset(20000)
+dataset = make_dataset(30000)
 
 #training the nn with the data
 for data in dataset:
@@ -36,6 +34,6 @@ for i in range(0,2):
 		out = nn.feedForward([i, j])
 		print(f"A:{i} and B:{j} => A XOR B : {out[0]}")
 
-print(f"loss :{nn.loss}")
+nn.save("xor_file")
 
 

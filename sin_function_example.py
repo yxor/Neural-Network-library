@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import random
 
 nn = NeuraNetwork(1,10,1)
-DATASET_SIZE = 100000
+DATASET_SIZE = 10000
 
 
 

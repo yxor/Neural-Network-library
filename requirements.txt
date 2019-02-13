@@ -1,5 +1,5 @@
-#required for the nn to function
+# required for the nn class
 numpy
-#required for the examples
+# required for the examples
 matplotlib
 sklearn
