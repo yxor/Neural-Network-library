@@ -8,11 +8,11 @@ DATASET_SIZE = 10000
 
 
 
-def make_dataset(number):
+def make_dataset(number, function):
 	dataset = []
 	for i in range(number):
 		inputs = [random.uniform(0,1)]
-		outputs = [(sin(inputs[0]*2*pi)+1)/2]
+		outputs = [(function(inputs[0]*2*pi)+1)/2]
 		dataset.append([inputs,outputs])
 	return dataset
 

@@ -108,7 +108,7 @@ class NeuraNetwork:
 			with open(f'{filename}.pkl', 'wb') as output:
 				pickle.dump(self.__dict__, output, pickle.HIGHEST_PROTOCOL)
 		except Exception as e:
-			raise Exception("Saving file failed : {}".format(e))
+			raise Exception(f"Saving file failed : {e}")
 	
 	def load(self, filename):
 		""" Loading an already saved pkl file """
@@ -116,4 +116,4 @@ class NeuraNetwork:
 			with open(f'{filename}.pkl', 'rb') as file:
 				self.__dict__ = pickle.load(file)
 		except Exception as e:
-			raise Exception("Loading file failed : {}".format(e))
+			raise Exception(f"Loading file failed : {e}")
